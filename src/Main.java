@@ -11,11 +11,12 @@ public class Main {
 
         int[][] matrix = genMatrix(n);
 
+//        Вывод матрицы
         for (int[] rows : matrix) {
 
             for (int row : rows) {
 
-                System.out.print(row + " ");
+                System.out.printf("%d ", row);
 
             }
             System.out.println();
@@ -23,6 +24,7 @@ public class Main {
         }
     }
 
+//    Генерация матрицы
     public static int[][] genMatrix(int n){
 
         int[][] arr = new int[n][n];
